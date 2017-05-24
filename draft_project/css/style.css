@@ -1,0 +1,28 @@
+body {
+	font-family: "calibri", sans-serif;
+	background-size: cover;
+}
+
+h1 {color: gray;
+	font-family: "calibri", sans-serif;
+	font-weight: normal;
+	text-align: center;
+}
+
+h2 {
+	color: green;
+}
+
+h3{
+	color: green;
+}
+
+
+
+p {color: gray;
+	font-family: "georgia", serif;
+}
+
+.explanation {
+	font-size: 12px;
+}
