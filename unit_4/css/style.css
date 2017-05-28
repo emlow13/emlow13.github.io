@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Pridi|Syncopate:700');
+
 *{
 	padding: 0;
-	maring: 0;
 }
 
 body {
@@ -11,22 +12,29 @@ body {
 }
 
 h1 {color: #3B694F;
-	font-family: "calibri", sans-serif;
+	font-family: 'Syncopate', "calibri", sans-serif;
 	font-weight: normal;
 	text-align: center;
-	font-size: 6em;
-	line-height: .05em;
+	font-size: 4.5em;
+	line-height: .01em;
+}
+
+h2 {
+	font-family: 'century gothic', sans-serif;
+	font-size:1.5em;
+	color: #65686d;
 }
 
 p {color: gray;
-	font-family: "georgia", serif;
+	font-family: 'Pridi',"georgia", serif;
 	font-size:1em;
 	width:40em;
 	line-height: 1.5em;
 }
 
-a, h2, h3, h4 {
+a, h3, h4 {
 	color: #3DE888;
+	line-height:1em;
 }
 
 main {
@@ -34,10 +42,11 @@ main {
 }
 
 
-nav {
+nav, footer {
 	text-align: center;
 	color: white;
 	text-transform: uppercase;
+	font-size: 1.1em;
 }
 
 nav a {
@@ -54,12 +63,28 @@ nav a:hover {
 button{
   margin:auto;
   display:block;
+  background-color: #3DE888;
+  border: none;
+  padding: .8em 1.6em;
+  text-align: center;
+  color: white;
+  font-size: 1.1em;
 }
 
 footer {
-	background-color: black;
-	padding: 30px;
+	background-color: #3B694F;
+	padding: 2em;
 	text-align: center;
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+	margin-right: 15px;
+}
+
+footer a:hover {
+	color: #3DE888;
 }
 
 hr {
@@ -72,12 +97,13 @@ img.hero {
 	display:inline-block;
 	margin:2em auto;
 	width:25%;
-	padding:1.3em;
+	padding:1.15em;
 }
 
 
 #slogan {
 	text-align: center;
-	line-height: .05em;
+	line-height: .01em;
+	padding-bottom:2em;
 }
 
