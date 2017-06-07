@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Pridi|Syncopate:700');
 
 *{
+	margin:0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -11,7 +13,8 @@ body {
 
 }
 
-h1 {color: #3B694F;
+h1 {
+	color: #3B694F;
 	font-family: 'Syncopate', "calibri", sans-serif;
 	font-weight: normal;
 	text-align: center;
@@ -25,10 +28,11 @@ h2 {
 	color: #65686d;
 }
 
-p {color: gray;
+p {
+	color: gray;
 	font-family: 'Pridi',"georgia", serif;
 	font-size:1em;
-	width:40em;
+	/* width:40em; */
 	line-height: 1.5em;
 }
 
@@ -43,7 +47,10 @@ nav {
     border: 1px black solid;
     padding: 20px;
 }
-
+nav a {
+	color:#fff;
+	text-decoration:none;
+}
 #intro {
     background-color: #ffe2b8;
     border: 1px black solid;
@@ -73,17 +80,11 @@ nav {
     border: 1px black solid;
     padding: 20px;
 }
-
-#conditioning {
-    background-color: #ffe2b8;
+#modalities section {
+    background-color: #de8e19;
     border: 1px black solid;
     padding: 20px;
-}
-
-#sprinting {
-    background-color: #ffe2b8;
-    border: 1px black solid;
-    padding: 20px;
+    width: 33.33%;
 }
 
 #philosophy {
