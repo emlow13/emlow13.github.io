@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Pridi|Syncopate:700');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "calibri", sans-serif;
+    font-size: 16px; /*1em=16px*/
+}
+
+#intro {
+    background: url(../images/triptych_background_image.png);
+    background-size: cover;
+    color: #000;
+    width: auto;
+}
+
+#hero {
+    text-align: center;
+    height: 300px;
+}
+
+h1 {
+    color: #3DE888;
+    font-family: 'Syncopate', "calibri", sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 4.5em;
+    line-height: 2em;
+}
+
+h2 {
+    font-family: 'century gothic', sans-serif;
+    font-size:1.5em;
+    color: #65686d;
+    font-weight: bold;
+}
+
+p {
+    color: gray;
+    font-family: 'Pridi',"georgia", serif;
+    font-size:1em;
+    /* width:40em; */
+    line-height: 1.5em;
+    text-decoration: none;
+}
+
+header {
+    background-color: #000;
+    padding: .5em;
+}
+
+nav {
+    background-color: #7c828c;
+    color: #3B694F;
+}
+nav a {
+    background-color: #91bca9;
+    color:#fff;
+    text-decoration:none;
+    display: block;
+    float: left;
+    padding: 1.3em;
+}
+nav a:hover {
+    background: #3DE888;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #fff;
+}
+
+#calltoaction {
+    text-align: center;
+    color:#000;
+    padding: 1em 1em;
+    float: center;
+    background-color: #3DE888;
+    text-decoration:none;
+}
+
+#calltoaction a {
+    color:#fff;
+    font-size: 1.5em;
+}
+
+#calltoaction a:hover {
+    color:#ff0000;
+}
+
+#intro {
+    padding: 7em;
+}
+
+#slogan {
+    background-color: rgba(224,205,141,.7);
+    padding: 1.4em;
+}
+
+.wrapper {
+    padding: 1.2em;
+}
+
+#who_we_are {
+    padding: 1.5em;
+}
+
+#who_we_are p {
+    padding: 1.2em;
+}
+
+#who_we_are a:hover {
+    color: #3DE888;
+}
+
+
+#get_there {
+    padding: 20px;
+}
+
+
+#philosophy_image {
+    display:inline-block;
+    padding: 1em;
+    width: 100%;
+}
+
+#improvement_image {
+    display:inline-block;
+    padding: 1em;
+    width: 100%;
+}
+
+#modalities {
+    padding: 20px;
+}
+
+#details {
+    padding: 20px;
+}
+
+#skillsandstrength {
+    padding: 2%;
+    float: left;
+    width: 30%;
+}
+
+#conditioning {
+    padding: 2%;
+    float: left;
+    width: 30%;
+}
+
+#sprinting {
+    padding: 2%;
+    float: left;
+    width: 30%;
+}
+
+#philosophy {
+    padding: 3%;
+    float: left;
+    width: 46%;
+}
+
+#improvement {
+    padding: 3%;
+    float: left;
+    width: 46%;
+}
+
+#get_there p {
+    font-size: 1.5em;
+}
+
+#get_there a:hover {
+    color: #3DE888;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+footer {
+    background-color: #7c828c;
+    padding: 1.2em;
+}
+
+footer p {
+    color:#fff;
+}
+
+
+
