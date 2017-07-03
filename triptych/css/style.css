@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css?family=Pridi|Syncopate:700');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "calibri", sans-serif;
+    font-size: 16px; /*1em=16px*/
+}
+
+#intro {
+    background: url(../images/triptych_background_image.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: #000;
+    padding: 3em;
+    height: 750px;
+}
+
+#logo a{
+    text-decoration: none;
+    color: #65686d;
+}
+
+#logo a:hover {
+    color: #3DE888;
+}
+
+h1 {
+    color: #3DE888;
+    font-family: 'Syncopate', "calibri", sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 3em;
+    line-height: 1.2em;
+}
+
+h2 {
+    font-family: 'century gothic', sans-serif;
+    font-size:1.5em;
+    color: #65686d;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    color: gray;
+    font-family: 'Pridi',"georgia", serif;
+    font-size:1em;
+    /* width:40em; */
+    line-height: 1.5em;
+    text-decoration: none;
+}
+
+header {
+    background-color: #000;
+    padding: .5em;
+}
+
+nav {
+    background-color: #7c828c;
+    color: #3B694F;
+}
+nav a {
+    background-color: #91bca9;
+    color:#fff;
+    text-decoration:none;
+    display: block;
+    float: left;
+    padding: 1.3em;
+}
+nav a:hover {
+    background: #3DE888;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #fff;
+}
+
+#calltoaction {
+    text-align: center;
+    color:#000;
+    padding: 1em 1em;
+    float: center;
+    background-color: #3DE888;
+    text-decoration:none;
+}
+
+#calltoaction a {
+    color:#fff;
+    font-size: 1.5em;
+}
+
+#calltoaction a:hover {
+    color:#ff0000;
+}
+
+#slogan {
+    background-color: rgba(224,205,141,.7);
+    padding: 1.2em;
+}
+
+.wrapper {
+    padding: 1.2em;
+}
+
+#who_we_are {
+    padding: 1.5em;
+}
+
+#who_we_are p {
+    padding: 1.2em;
+}
+
+#who_we_are a:hover {
+    color: #3DE888;
+}
+
+
+#get_there {
+    padding: 1.2em;
+    text-align: center;
+}
+
+
+#philosophy_image {
+    display:inline-block;
+    padding: 1em;
+    width: 100%;
+}
+
+#improvement_image {
+    display:inline-block;
+    padding: 1em;
+    width: 100%;
+}
+
+#modalities {
+    padding: 1.2em;
+}
+
+#modalities section{
+    padding: 1.5%;
+    margin: 1%;
+    float: left;
+    width: 31%;
+}
+
+#modalities img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#details {
+    padding: 1.2em;
+}
+
+#details section{
+    padding: 1.5%;
+    margin: 1%;
+    float: left;
+    width: 46%;
+}
+
+#get_there p {
+    font-size: 1.5em;
+}
+
+#get_there a:hover {
+    color: #3DE888;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+footer {
+    background-color: #7c828c;
+    padding: 1.2em;
+}
+
+footer p {
+    color:#fff;
+}
+
+@media only screen and (max-width: 1200px) {
+    #intro {
+        height: 650px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    #modalities img{
+        width: 150px;
+    }
+
+    #details img{
+        width: 250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #intro {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    nav a{
+        float:none;
+        /*width: 100%;*/
+    }
+
+    body{
+        font-size:14px;
+    }
+
+    h1 {
+    text-align: left;
+    font-size: 1.5em;
+    line-height: 1.1em;
+    }
+
+    h2 {
+    font-size: 1.2em;
+
+    }
+
+    #intro {
+        background-repeat: repeat;
+    }
+
+    #modalities section{
+        float:none;
+        width: 100%;
+    }
+
+    #details section{
+        float:none;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    #details img{
+        width: 100%;
+    }
+}
+
+/*Sub-page css info*/
+#subpageheading h1 {
+    text-align:left;
+}
+
+#subpageheading p {
+    padding:.5em;
+    margin-bottom:1.5em;
+}
+#subpageheading h2 {
+    text-align:left;
+    padding-left: 1.2em;
+}
+
+#workoutsections {
+    padding:1em;
+    margin: 1em;
+}
+
+#workoutsections ul {
+    padding-bottom:1em;
+    margin:1em;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
