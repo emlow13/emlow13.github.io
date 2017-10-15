@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sample Page</title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<title>Monk's Cafe</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<header>
-		<p id="logo"><a href="index.html">Webpage Name</a></p>		
+		<p id="logo"><a href="index.html">Monk's Cafe</a></p>		
 	</header>
 
 	<nav class="clearfix">
@@ -16,11 +15,66 @@
 	</nav>
 
 	<section id="intro" class="clearfix">
-		
+		<h1>Monk's Cafe</h1>
+		<h2>"The Coffee Shop"</h2>
+
+<!-- 		<div id="outsideImageContainer">
+		</div> -->
+    </section>
+
+    <section id="reservations" class="clearfix">
+    	<div id="makingReservations" class="subSection">
+    	<h1 id="reservationsTitle">Reservations</h1>
+    	<h2 id="reservationForm">Make a Reservation</h2>
+	    	<form class="subSection">
+			    <input type="text" placeholder="Name"> 
+			    <input type="text" placeholder="Day">
+			    <button>Confirm Reservation</button>
+			</form>
+		</div>
+		<div id="existingReservations" class="subSection">
+    	<h2 id="existingReservationsTitle" >Existing Reservations</h2>
+    		<table id="reservationsTable" >
+			  <tr>
+			    <th>Name</th>
+			    <th>Day</th> 
+			  </tr>
+			  <tr>
+			    <td>Jill Smith</td> 
+			    <td>10/15/2017</td>
+			  </tr>
+			  <tr>
+			    <td>Eve Jackson</td> 
+		    <td>10/15/2017</td>
+			  </tr>
+			</table>
+		</div>
+    </section>
+
+    <br>
+
+    <section id="gallery">
+    	<h1 id="galleryTitle">Come Dine with Us</h1>
+    	<div id="jerryAndGeorgeContainer">
+    		<img id="jerryAndGeorge" src="images/jerry.jpg" align="middle" alt="Jerry and George Talking" title="Inside the Cafe">
+    	</div>
+    </section>
+
+    <section id="customerReviews">
+    	<div class=subSection>
+    		<h1 id="reviewTitle">Customer Reviews</h1>
+    		<div id=cafeImageContainer>
+    			<img id="cafeImage" src="images/cafe.jpg" alt="Coffee Close-Up" title="Daily coffee">
+    		</div>
+    	</div>
+    	<div class=subSection>
+    		<p> “Big lettuce, big carrots, tomatoes like volleyballs.” — Jerry Seinfeld, on The BIG Salad
+    		</p>
+    	</div>
     </section>
 
 	<footer>
-		<p id="footer">Sample Footer</p>
+		<p id="footer"></p>
     </footer>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/handlebars-v4.0.10.js"></script>
