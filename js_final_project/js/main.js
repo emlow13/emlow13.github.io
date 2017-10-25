@@ -6,6 +6,7 @@ function getMetronAPIResults() {
   var airportString = $("#airportField").val();
   airportString = airportString.toUpperCase();
 
+//define path to internal data API
   var metronAPI = 'http://adoc-api/arrivalListDateAirport/' + dateString + '/' + airportString;
 
 //check that values have been entered in query fields
@@ -18,7 +19,7 @@ function getMetronAPIResults() {
             success: function saveData(data) {
             //save results
             writeDocTable(data);
-            // console.log(data);
+            console.log(data);
             },
             error: function(XMLHttpRequest, textStatus, errorThrown)
             {
@@ -83,16 +84,16 @@ function writeDocTable(data) {
 
             eteMill = etaMill - etdMill;
             ete = eteMill / (1000 *60);
-            str = ete.toFixed(20);
-            eteString = str.substring(0, str.length-10);
+            eteString = ete.toString();
+            eteString = parseInt(eteString);
 
             // alert('data from column 3:' + colThreeData);
             // alert('data from column 4:' + colFourData);
-            eteResultsString = 'Estimated Time En Route' + 'from ' + rowData[1] + ' to ' + rowData[2] + ' is: ' + eteString + ' minutes';
-            alert(eteResultsString);
+            eteResultsString = 'Estimated Time En Route ' + 'from ' + rowData[1] + ' to ' + rowData[2] + ' is ' + eteString + ' minutes';
+            // alert(eteResultsString);
             $("#queryInstructions").hide(250);
-            // $("#calcResults").html(eteResultsString);
-            // $("$calcResults").show(250);
+            $("#calcResults").html(eteResultsString);
+            $("#calcResults").show(250);
             // $("#calcResults").show(500);
         }
     });
@@ -105,6 +106,6 @@ $("#searchBtn").on('click', function(e) {
   e.preventDefault();
    returnedData = getMetronAPIResults();
    console.log('Searching for flight query results...')
-   $("#sample").hide(5000);
+   $("#sample").hide(2000);
     $("#queryInstructions").show(500);
 }); 
