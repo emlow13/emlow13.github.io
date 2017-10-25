@@ -18,8 +18,8 @@ function getMetronAPIResults() {
             success: function saveData(data) {
             //save results
             writeDocTable(data);
-            console.log(data);
-            }, //console.log(data),
+            // console.log(data);
+            },
             error: function(XMLHttpRequest, textStatus, errorThrown)
             {
                      alert("error loading " + metronAPI);
@@ -104,7 +104,7 @@ function writeDocTable(data) {
 $("#searchBtn").on('click', function(e) {
   e.preventDefault();
    returnedData = getMetronAPIResults();
-   console.log('Running main function!')
+   console.log('Searching for flight query results...')
    $("#sample").hide(5000);
     $("#queryInstructions").show(500);
 }); 
