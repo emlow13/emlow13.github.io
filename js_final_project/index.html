@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table Viewer</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="default">
+	<header>
+		<p id="logo"><a href="index.html">Sample Table Query</a></p>		
+	</header>
+
+	<nav class="clearfix">
+		
+	</nav>
+
+	<section id="intro" class="clearfix">
+		
+    </section>
+
+    
+
+<h1 id="enterDate">Enter query date</h1>
+
+		<form class="pure-form">
+			<input id="dateField" class="input"
+			placeholder="Date in yyyymmdd format"></input>
+		<!-- 	<button id="searchBtn" class="pure-button pure-button-primary">Search</button> -->
+		</form>
+
+<h1 id="enterAirport">Enter 4-letter airport ICAO code</h1>
+
+		<form class="pure-form">
+			<input id="airportField" class="input"
+			placeholder="Airport in AAAA format"></input>
+			<button id="searchBtn" class="pure-button pure-button-primary">Search</button>
+		</form>
+
+	<h2 id="sample"></h2>
+
+	<h3 id="queryInstructions">Select an Orig-Dest row to see the net en route time</h3>
+
+	<h3 id="calcResults"></h3>
+
+	<div id="divTable"></div>
+
+	<footer>
+		<p id="footer"></p>
+    </footer>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/handlebars-v4.0.10.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript" src="DataTables/datatables.min.js"></script>
+</body>
+</html>
